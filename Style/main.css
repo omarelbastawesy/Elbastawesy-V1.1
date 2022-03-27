@@ -1,0 +1,829 @@
+@media (max-width: 992px) {
+  .landing .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .landing .container .text {
+    text-align: center;
+  }
+  .landing .container .gears {
+    -webkit-transform: rotate(0deg) !important;
+            transform: rotate(0deg) !important;
+    max-height: 300px;
+  }
+  .landing .container .gears .ski {
+    -webkit-transform: rotate(0deg) !important;
+            transform: rotate(0deg) !important;
+  }
+  .landing .container .gears .ski.a {
+    top: 23% !important;
+  }
+  .landing .container .gears .ski.b {
+    top: 56% !important;
+  }
+  .landing .container .gears .ski.c {
+    top: 7% !important;
+  }
+
+  .float .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  header .container {
+    position: relative;
+  }
+  header .container .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0 !important;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    margin: 0;
+    right: 0;
+    background-color: #35363ad9;
+    width: 200px;
+    border-radius: 0px 0px 0px 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .container .links a {
+    padding: 20px 10px !important;
+    width: 100%;
+  }
+  header .container .links a:hover li {
+    color: #4285f4;
+  }
+  header .container .links a li {
+    position: relative;
+    left: 0px;
+    color: #f2f5f6;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+  header .container .links a:hover li {
+    left: 25px;
+  }
+  header .container .icon {
+    display: block !important;
+  }
+  header .click {
+    width: 0px !important;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+    right: 110px !important;
+  }
+
+  .landing .container {
+    height: inherit !important;
+  }
+  .landing .container .gears {
+    -ms-flex-preferred-size: 0% !important;
+        flex-basis: 0% !important;
+    display: none;
+    height: 0%;
+  }
+  .landing .container .text {
+    -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+  }
+}
+@media (max-width: 400px) {
+  .float .container .image {
+    display: none;
+  }
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*::-moz-selection {
+  color: #4285f4;
+  background: #35363a;
+}
+*::selection {
+  color: #4285f4;
+  background: #35363a;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 1199px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+div.title {
+  position: relative;
+  margin: 70px auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px #35363a solid;
+  border-radius: 20px;
+  cursor: pointer;
+}
+div.title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  z-index: -1;
+  left: -30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #35363a;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+div.title::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  z-index: -1;
+  top: 50%;
+  right: -30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #35363a;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+div.title:hover h2 {
+  color: #f2f5f6;
+}
+div.title:hover::before {
+  width: 102%;
+  height: 102%;
+  left: 0;
+  border-radius: 20px;
+}
+div.title:hover::after {
+  width: 102%;
+  height: 102%;
+  right: 0;
+  border-radius: 20px;
+}
+div.title a {
+  text-decoration: none;
+}
+div.title a h2 {
+  margin: 0;
+  padding: 10px 35px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #35363a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes viper {
+  0% {
+    bottom: 2%;
+  }
+  10% {
+    bottom: 0;
+  }
+  20% {
+    bottom: 2%;
+  }
+  30% {
+    bottom: 0%;
+  }
+  40% {
+    bottom: 2%;
+  }
+  60% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}
+@keyframes viper {
+  0% {
+    bottom: 2%;
+  }
+  10% {
+    bottom: 0;
+  }
+  20% {
+    bottom: 2%;
+  }
+  30% {
+    bottom: 0%;
+  }
+  40% {
+    bottom: 2%;
+  }
+  60% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 2%;
+  }
+}
+header {
+  background-color: #f2f5f6;
+}
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 65px;
+}
+header .container .logo {
+  width: 60px;
+}
+header .container .logo svg {
+  cursor: pointer;
+}
+header .container .logo svg path,
+header .container .logo svg circle {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .container .logo svg:hover path {
+  fill: #4285f4;
+}
+header .container .logo svg:hover circle {
+  fill: #4285f4;
+}
+header .container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+header .container .links a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #35363a;
+  cursor: pointer;
+  padding: 10px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .container .links a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  background-color: #35363a;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .container .links a:hover::before {
+  width: 100%;
+  left: 0%;
+  background-color: #4285f4;
+}
+header .container .links a:hover {
+  color: #4285f4;
+}
+header .container .icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+}
+header .container .icon:hover path {
+  fill: #4285f4;
+}
+header .container .icon path {
+  fill: #35363a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.landing {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100vh - 65px);
+  background-image: url(/Images/stats.jpg);
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.landing .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: calc(100vh - 65px);
+  overflow: hidden;
+}
+.landing .container .gears {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative;
+  height: 300px;
+  min-width: 535px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  overflow: hidden;
+}
+.landing .container .gears .ski {
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.landing .container .gears .ski.a {
+  top: 25%;
+  right: 15%;
+  font-size: 30px;
+  font-weight: 900;
+  color: #35363a;
+}
+.landing .container .gears .ski.b {
+  top: 50%;
+  right: 58%;
+  font-size: 30px;
+  font-weight: 900;
+  color: #35363a;
+}
+.landing .container .gears .ski.c {
+  top: 8%;
+  right: 82%;
+  font-size: 30px;
+  font-weight: 900;
+  color: #35363a;
+}
+.landing .container .gears .gear-1 {
+  width: 100px;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  width: 250px;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.landing .container .gears .gear-2 {
+  position: absolute;
+  bottom: 0%;
+  right: 44%;
+  width: 206px;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  animation-direction: reverse;
+}
+.landing .container .gears .gear-3 {
+  position: absolute;
+  top: 0%;
+  left: 12px;
+  width: 140px;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.landing .container .text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  z-index: 0;
+}
+.landing .container .text .head {
+  font-size: 75px;
+  font-weight: 800;
+  margin: 20px 0;
+  color: #35363a;
+  text-transform: uppercase;
+}
+.landing .container .text .info {
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0;
+  color: #35363a;
+}
+.landing .down {
+  width: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-animation-name: viper;
+          animation-name: viper;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.landing .down svg {
+  cursor: pointer;
+}
+.landing .down svg path {
+  fill: #35363a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.landing .down svg:hover path {
+  fill: #4285f4;
+}
+
+.skills {
+  margin: 70px 0;
+}
+.skills .container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.skills .container .skill {
+  background-color: #f2f5f6;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+.skills .container .skill .icon {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  top: 0;
+  right: 15px;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+.skills .container .skill .icon svg path {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.skills .container .skill .icon svg:hover .html {
+  fill: #d84924;
+}
+.skills .container .skill .icon svg:hover .css {
+  fill: #0066b6;
+}
+.skills .container .skill .icon svg:hover .js {
+  fill: #cbb132;
+}
+.skills .container .skill .name {
+  margin: 0%;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.skills .container .skill .info {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.skills .container .skill .more {
+  background-color: #35363a;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4285f4;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.skills .container .skill .more:hover {
+  background-color: #4285f4;
+  color: #35363a;
+}
+
+.portofolio {
+  margin: 70px 0;
+}
+.portofolio .container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.portofolio .container .pro {
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.portofolio .container .pro .back {
+  width: 100%;
+  height: 100%;
+}
+.portofolio .container .pro:hover::before {
+  right: 0%;
+}
+.portofolio .container .pro:hover .text .heir,
+.portofolio .container .pro:hover .text .info,
+.portofolio .container .pro:hover .text .source,
+.portofolio .container .pro:hover .text .live {
+  left: 0%;
+}
+.portofolio .container .pro::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  right: 100%;
+  background-color: #35363ad9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.portofolio .container .pro .text {
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+.portofolio .container .pro .text .heir {
+  left: 105%;
+  position: relative;
+  color: #f2f5f6;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 10px auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.portofolio .container .pro .text .info {
+  left: 105%;
+  position: relative;
+  color: #f2f5f6;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 50px 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.portofolio .container .pro .text .source {
+  left: 105%;
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #f2f5f6;
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #4285f4;
+  position: absolute;
+  bottom: 160px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.portofolio .container .pro .text .live {
+  left: 105%;
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #f2f5f6;
+  padding: 10px 40px;
+  border-radius: 5px;
+  background-color: #f44242;
+  position: absolute;
+  bottom: 80px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.footer {
+  background-color: #35363a;
+  padding: 20px 0;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .container p.copy {
+  color: #f2f5f6;
+}
+.footer .container .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+.footer .container .media a path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #f2f5f6;
+}
+.footer .container .media a.facebook:hover path {
+  fill: #1771e6;
+}
+.footer .container .media a.instagram:hover path {
+  fill: #f04c5d;
+}
+.footer .container .media a.twitter:hover path {
+  fill: #4ec1f2;
+}
+.footer .container .media a.github:hover path {
+  fill: black;
+}
+.footer .container .media a.mail:hover path {
+  fill: #eb4134;
+}
+.footer .container .media a svg {
+  height: 30px;
+  width: 30px;
+}
+
+.float {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.float::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #35363ad9;
+}
+.float .container {
+  max-height: 100vh;
+  overflow: auto;
+}
+.float .container .text .analizA .proAnalizA {
+  position: relative;
+  overflow: hidden;
+}
+.float .container .text .analizA .proAnalizA::after {
+  position: absolute;
+  content: "";
+  font-size: 15px;
+  color: #f2f5f6;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  width: 0%;
+  background-color: #4285f4;
+}
+.float .container .text .analizB .proAnalizB {
+  position: relative;
+  overflow: hidden;
+}
+.float .container .text .analizB .proAnalizB::after {
+  position: absolute;
+  content: "";
+  font-size: 15px;
+  color: #f2f5f6;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  width: 0%;
+  background-color: #4285f4;
+}
+
+.display {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
